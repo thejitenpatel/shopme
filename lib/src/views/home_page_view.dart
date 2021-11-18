@@ -8,6 +8,8 @@ import 'package:shopme/src/widgets/product_tile.dart';
 class HomePageView extends StatelessWidget {
   final ProductController productController = Get.put(ProductController());
 
+   HomePageView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +28,8 @@ class HomePageView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16),
             child: Row(
-              children: [
-                const Expanded(
+              children: const [
+                 Expanded(
                   child: Text(
                     "ShopMe",
                     style: TextStyle(
@@ -43,7 +45,7 @@ class HomePageView extends StatelessWidget {
             child: Obx(
               () {
                 if (productController.isLoading.value) {
-                  return Center(child: CircularProgressIndicator());
+                  return const Center(child: CircularProgressIndicator());
                 } else
                   return StaggeredGridView.countBuilder(
                     crossAxisCount: 2,
@@ -53,7 +55,7 @@ class HomePageView extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return ProductTile(productController.productList[index]);
                     },
-                    staggeredTileBuilder: (index) => StaggeredTile.fit(1),
+                    staggeredTileBuilder: (index) => const StaggeredTile.fit(1),
                   );
               },
             ),
