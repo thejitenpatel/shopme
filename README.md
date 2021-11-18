@@ -1,16 +1,36 @@
-# shopme
+[![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)](https://pub.dev/packages/fancy_text_reveal)  ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+# shopMe
 
-A new Flutter project.
+An online shopping app
+### Demo 👀
 
-## Getting Started
+![Output sample](images/shopme.gif)
 
-This project is a starting point for a Flutter application.
+### Usage 🎨
 
-A few resources to get you started if this is your first Flutter project:
+To clone and run this application, you'll need [git](https://git-scm.com) and [flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+# Clone this repository
+$ git clone https://github.com/TheBoy-WhoCode/shopme.git
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Go into the repository
+$ cd shopme
+
+# Install dependencies
+$ flutter pub get
+
+# Run the app
+$ flutter run
+```
+
+### Packages 📦
+
+Package | Description
+---|---
+[cached_network_image](https://pub.dev/packages/cached_network_image) | For caching images
+[http](https://pub.dev/packages/http) | For making network request
+[dio](https://pub.dev/packages/dio) | For making advanced network request
+[get](https://pub.dev/packages/get) | State management
+
+
